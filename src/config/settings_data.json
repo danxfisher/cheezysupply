@@ -1,0 +1,19 @@
+{
+  "current": "Default",
+  "presets": {
+    "Default": {
+      "sections": {
+        "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "frontpage"
+          },
+          "class": "bananananannana"
+        },
+      },
+      "content_for_index": [
+        "featured-collection"
+      ]
+    }
+  }
+}
