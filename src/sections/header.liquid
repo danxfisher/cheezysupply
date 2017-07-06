@@ -11,6 +11,7 @@
     }
   {% endif %}
 </style>
+
 <div data-section-id="{{ section.id }}" data-section-type="header-section">
   <header role="banner">
     {% if template.name == 'index' %}
@@ -26,7 +27,7 @@
                  alt="{{ section.settings.logo.alt | default: shop.name }}"
                  itemprop="logo">
           {% else %}
-            {{ shop.name }}
+            
           {% endif %}
         </a>
     {% if template.name == 'index' %}
@@ -35,11 +36,7 @@
       </div>
     {% endif %}
 
-    <a href="/cart">
-      {% include 'icon-cart' %}
-      {{ 'layout.cart.title' | t }}
-      ({{ cart.item_count }} {{ 'layout.cart.items_count' | t: count: cart.item_count }})
-    </a>
+
 
     {% if shop.customer_accounts_enabled %}
       <ul>
@@ -66,12 +63,13 @@
       </ul>
     {% endif %}
 
+    <!--
     <form action="/search" method="get" role="search">
       <label for="Search" class="label-hidden">
         {{ 'general.search.placeholder' | t }}
       </label>
       <input type="search"
-             name="q"
+             name="q"``
              id="Search"
              value="{{ search.terms | escape }}"
              placeholder="{{ 'general.search.placeholder' | t }}">
@@ -80,6 +78,7 @@
         <span class="icon-fallback-text">{{ 'general.search.submit' | t }}</span>
       </button>
     </form>
+    -->
 
   </header>
 
@@ -107,6 +106,13 @@
           </li>
         {% endif %}
       {% endfor %}
+      {% if cart.item_count != 0 %}
+      <li class="site-nav--active">
+        <a href="/cart">
+          {{ 'layout.cart.title' | t }}
+        </a>
+      </li>
+      {% endif %}
     </ul>
   </nav>
 </div>

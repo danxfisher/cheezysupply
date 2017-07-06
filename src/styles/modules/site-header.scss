@@ -6,3 +6,17 @@
     display: block;
   }
 }
+
+.site-nav {
+  padding-left: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 12px;
+
+    a {
+      font-weight: bold;
+    }
+  }
+}
