@@ -2,6 +2,8 @@
 
 ## To Do
 
+* add cart to footer right menu on desktop view only
+* add cart to header menu for mobile view
 * update svg viewbox to be closer to yeezysupply
 * complete product page
-* complete collections page 
+* complete collections page
