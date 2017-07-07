@@ -8,9 +8,9 @@
     * [ ] update svg viewbox to be closer to yeezysupply
     * [ ] replace courier font with 'VCR OSD Mono'
   * [ ] **desktop view:**
-    * [ ] add cart to footer right menu on desktop view only
+    * [ ] add cart to footer right menu
   * [ ] **mobile view:**
-    * [ ] remove carousel and display centered block images in mobile view
-    * [ ] add cart to header menu for mobile view
+    * [ ] remove slider and show centered block images
+    * [ ] add cart to header menu
 * [ ] complete product page
 * [ ] complete collections page
