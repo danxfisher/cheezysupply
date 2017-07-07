@@ -6,6 +6,7 @@
   * [ ] **all views:**
     * [ ] add placeholder images/navs if none exist
     * [ ] update svg viewbox to be closer to yeezysupply
+    * [ ] replace courier font with 'VCR OSD Mono'
   * [ ] **desktop view:**
     * [ ] add cart to footer right menu on desktop view only
   * [ ] **mobile view:**
