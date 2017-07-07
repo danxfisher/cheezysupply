@@ -6,3 +6,31 @@ body, html {
     text-decoration: none;
   }
 }
+
+nav {
+  ul {
+    text-transform: uppercase;
+  }
+}
+
+.cs__mobile-menu {
+  display: none;
+}
+
+.cs__footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 740px) {
+  .cs__mobile-menu {
+    display: block;
+  }
+  .cs__footer-left-menu {
+    display: none;
+  }
+  .cs__footer-center-menu {
+    display: none;
+  }
+}
