@@ -1,11 +1,38 @@
 {%- assign collection = collections[section.settings.collection] -%}
 
+
 <div id="front-page-slider" class="owl-carousel owl-theme">
   {% for product in collection.products limit: 6 %}
     <div class="slider-item">
       {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
     </div>
+  {% else %}
+
+    {% for i in (1..6) %}
+      <div class="slider-item">
+          {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+          {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+      </div>
+
+    {% endfor %}
   {% endfor %}
+</div>
+
+<div id="front-page-mobile">
+  {% for product in collection.products limit: 6 %}
+    <div class="front-page-mobile-item">
+      {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+    </div>
+  {% else %}
+
+  {% for i in (1..6) %}
+    <div class="front-page-mobile-item">
+        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+    </div>
+
+  {% endfor %}
+{% endfor %}
 </div>
 
 
