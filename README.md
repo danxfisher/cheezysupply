@@ -2,7 +2,7 @@
 
 ## To Do
 
-* [ ] complete front page
+* [x] complete front page
   * [x] **all views:**
     * [x] add placeholder images/navs if none exist
     * [x] update svg viewbox to be closer to yeezysupply
