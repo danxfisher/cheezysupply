@@ -32,6 +32,7 @@
 
   {% include 'social-meta-tags' %}
 
+  {{ 'vcr-font.css' | asset_url | stylesheet_tag }}
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
   <script>
@@ -72,7 +73,7 @@
         loop: true,
         animateOut: 'fadeOut',
         responsiveRefreshRate : 200,
-        navText: ['<svg width="100%" height="100%" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: rgb(171,171,171);" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>','<svg width="100%" height="100%" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: rgb(171,171,171);" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+        navText: ['<svg width="100%" height="100%" viewBox="3 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: rgb(171,171,171);" d="M8.554,1.001l-5.607,5.607l 5.607,5.606"/></svg>','<svg width="100%" height="100%" viewBox="-3 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: rgb(171,171,171);" d="M2.054,18.214l5.606,-5.606l-5.606,-5.607"/></svg>'],
       });
     }
     </script>

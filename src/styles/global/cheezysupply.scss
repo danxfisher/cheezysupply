@@ -23,6 +23,19 @@ nav {
   width: 100%;
 }
 
+#front-page-mobile {
+  .front-page-mobile-item {
+    display: none;
+  }
+}
+
+.cs__footer-right-menu {
+  #footer-right-menu-cart {
+    display: inline-block;
+  }
+}
+
+// all media queries for any of my custom ids/classes
 @media only screen and (max-width: 740px) {
   .cs__mobile-menu {
     display: block;
@@ -33,4 +46,19 @@ nav {
   .cs__footer-center-menu {
     display: none;
   }
+  .cs__footer-right-menu {
+    #footer-right-menu-cart {
+      display: none;
+    }
+  }
+  // hold off on this one ...
+  // #front-page-slider {
+  //   display: none;
+  // }
+  // #front-page-mobile {
+  //   .front-page-mobile-item {
+  //     display: block;
+  //     text-align: center;
+  //   }
+  // }
 }

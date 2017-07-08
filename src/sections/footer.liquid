@@ -27,13 +27,6 @@
               </li>
             {% endif %}
           {% endfor %}
-          {% if cart.item_count != 0 %}
-          <li class="site-nav--active">
-            <a href="/cart">
-              {{ 'layout.cart.title' | t }}
-            </a>
-          </li>
-          {% endif %}
         </ul>
       </div>
       <div class="grid__item medium-up--one-half">
@@ -61,13 +54,6 @@
               </li>
             {% endif %}
           {% endfor %}
-          {% if cart.item_count != 0 %}
-          <li class="site-nav--active">
-            <a href="/cart">
-              {{ 'layout.cart.title' | t }}
-            </a>
-          </li>
-          {% endif %}
         </ul>
       </div>
       <div class="grid__item medium-up--one-quarter">
@@ -96,7 +82,7 @@
             {% endif %}
           {% endfor %}
           {% if cart.item_count != 0 %}
-          <li class="site-nav--active">
+          <li id="footer-right-menu-cart" class="site-nav--active">
             <a href="/cart">
               {{ 'layout.cart.title' | t }}
             </a>

@@ -2,9 +2,15 @@
 
 ## To Do
 
-* add cart to footer right menu on desktop view only
-* add cart to header menu for mobile view
-* add placeholder images/navs if none exist
-* update svg viewbox to be closer to yeezysupply
-* complete product page
-* complete collections page
+* [x] complete front page
+  * [x] **all views:**
+    * [x] add placeholder images/navs if none exist
+    * [x] update svg viewbox to be closer to yeezysupply
+    * [x] replace courier font with 'VCR OSD Mono'
+  * [x] **desktop view:**
+    * [x] add cart to footer right menu
+  * [x] **mobile view:**
+    * ~~[ ] remove slider and show centered block images~~ canceled until i check yeezysupply on my phone
+    * [x] add cart to header menu
+* [ ] complete product page
+* [ ] complete collections page
