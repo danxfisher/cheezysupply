@@ -3,14 +3,14 @@
 ## To Do
 
 * [ ] complete front page
-  * [ ] **all views:**
+  * [x] **all views:**
     * [x] add placeholder images/navs if none exist
     * [x] update svg viewbox to be closer to yeezysupply
     * [x] replace courier font with 'VCR OSD Mono'
-  * [ ] **desktop view:**
+  * [x] **desktop view:**
     * [x] add cart to footer right menu
-  * [ ] **mobile view:**
-    * [ ] remove slider and show centered block images
-    * [ ] add cart to header menu
+  * [x] **mobile view:**
+    * ~~[ ] remove slider and show centered block images~~ canceled until i check yeezysupply on my phone
+    * [x] add cart to header menu
 * [ ] complete product page
 * [ ] complete collections page
