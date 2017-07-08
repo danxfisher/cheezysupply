@@ -5,8 +5,8 @@
 * [ ] complete front page
   * [ ] **all views:**
     * [ ] add placeholder images/navs if none exist
-    * [ ] update svg viewbox to be closer to yeezysupply
-    * [ ] replace courier font with 'VCR OSD Mono'
+    * [x] update svg viewbox to be closer to yeezysupply
+    * [x] replace courier font with 'VCR OSD Mono'
   * [ ] **desktop view:**
     * [ ] add cart to footer right menu
   * [ ] **mobile view:**
