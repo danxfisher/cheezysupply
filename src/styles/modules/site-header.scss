@@ -14,5 +14,10 @@
   li {
     display: inline-block;
     padding: 12px;
+    font-size: 15px;
+    line-height: 2;
+    box-sizing: border-box;
+    text-decoration-style: solid;
+    -webkit-box-direction: normal;
   }
 }

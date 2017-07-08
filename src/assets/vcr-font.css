@@ -3,10 +3,10 @@
 
 
 @font-face {
-    font-family: 'vcr_osd_monoregular';
-    src: url('vcr-webfont.woff2') format('woff2'),
+    /*font-family: 'vcr_osd_monoregular';*/
+    font-family: 'VCR';
+    src: /*url('vcr-webfont.woff2') format('woff2'),*/
          url('vcr-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
