@@ -1,4 +1,4 @@
-<div data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" itemscope itemtype="http://schema.org/Product" class="cs__product-wrap">
+<div data-section-id="{{ section.id }}" data-section-type="product" data-enable-history-state="true" itemscope itemtype="http://schema.org/Product">
 
   {%- assign current_variant = product.selected_or_first_available_variant -%}
   {%- assign featured_image = current_variant.featured_image | default: product.featured_image -%}
@@ -22,14 +22,14 @@
     </ul>
   {% endif %}
 
+
+  <h1>{{ product.title }}</h1>
+  <p>{{ product.vendor }}</p>
+
   <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <meta itemprop="priceCurrency" content="{{ shop.currency }}">
     <meta itemprop="price" content="{{ current_variant.price | divided_by: 100.00 }}">
     <link itemprop="availability" href="http://schema.org/{% if current_variant.available %}InStock{% else %}OutOfStock{% endif %}">
-
-    <div class="rte">
-      {{ product.description }}
-    </div>
 
     <form action="/cart/add" method="post" enctype="multipart/form-data">
       {% unless product.has_only_default_variant %}
@@ -66,7 +66,8 @@
         {% endfor %}
       </select>
 
-      <input type="hidden" id="Quantity" name="quantity" value="1" min="1">
+      <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
+      <input type="number" id="Quantity" name="quantity" value="1" min="1">
 
       <div data-price-wrapper>
         <span data-product-price>
@@ -86,7 +87,6 @@
       <button
         type="submit"
         name="add"
-        class="cs__cart-button"
         data-add-to-cart
         {% unless current_variant.available %}disabled="disabled"{% endunless %}>
           <span data-add-to-cart-text>
@@ -99,6 +99,10 @@
       </button>
     </form>
 
+  </div>
+
+  <div class="rte">
+    {{ product.description }}
   </div>
 
   {% if section.settings.show_share_buttons %}
@@ -120,7 +124,7 @@
         "type": "checkbox",
         "id": "show_share_buttons",
         "label": "Show social sharing buttons",
-        "default": true
+        "default": false
       }
     ]
   }

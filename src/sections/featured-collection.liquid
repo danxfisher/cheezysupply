@@ -4,7 +4,9 @@
 <div id="front-page-slider" class="owl-carousel owl-theme">
   {% for product in collection.products limit: 6 %}
     <div class="slider-item">
-      {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+      <a href="{{ product.url | within: collection }}">
+        {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+      </a>
     </div>
   {% else %}
 
@@ -21,7 +23,9 @@
 <div id="front-page-mobile">
   {% for product in collection.products limit: 6 %}
     <div class="front-page-mobile-item">
-      {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+      <a href="{{ product.url | within: collection }}">
+        {{ product.featured_image.src | img_url: '480x480' | img_tag: product.title }}
+      </a>
     </div>
   {% else %}
 
