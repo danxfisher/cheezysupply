@@ -13,6 +13,7 @@ nav {
   }
 }
 
+
 .cs__mobile-menu {
   display: none;
 }
@@ -51,18 +52,23 @@ nav {
   }
 }
 //** collection pages ***
-.cs__collection-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  .cs__collection-wrapper{
-    padding-top: 30px;
-    .cs__collection-image {
-      text-align: center;
+.cs__collection-container {
+  max-width: 81%;
+  margin: 0 auto;
+  .cs__collection-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    .cs__collection-wrapper{
+      padding-top: 30px;
+      .cs__collection-image {
+        text-align: center;
+      }
     }
   }
 }
+
 // all media queries for any of my custom ids/classes
 @media only screen and (max-width: 740px) {
   .cs__mobile-menu {
@@ -78,6 +84,9 @@ nav {
     #footer-right-menu-cart {
       display: none;
     }
+  }
+  .cs__collection-container {
+    max-width: 95%;
   }
   // hold off on this one ...
   // #front-page-slider {
