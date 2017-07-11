@@ -12,6 +12,7 @@
   * [x] **mobile view:**
     * ~~[ ] remove slider and show centered block images~~ canceled until i check yeezysupply on my phone
     * [x] add cart to header menu
-* [ ] complete product page
+* [x] complete product page
+  * [ ] if necessary, add slider to view additional images
 * [ ] complete collections page
 * [ ] complete cart page

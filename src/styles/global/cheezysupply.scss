@@ -35,6 +35,22 @@ nav {
   }
 }
 
+//*** product pages ***
+.cs__product-wrap {
+  padding-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+
+  .cs__cart-button {
+    margin-top: 20px;
+    background: none;
+    border: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
 // all media queries for any of my custom ids/classes
 @media only screen and (max-width: 740px) {
   .cs__mobile-menu {
