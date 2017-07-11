@@ -14,3 +14,4 @@
     * [x] add cart to header menu
 * [ ] complete product page
 * [ ] complete collections page
+* [ ] complete cart page
